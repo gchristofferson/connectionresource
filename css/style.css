@@ -1,0 +1,630 @@
+@font-face {
+	font-family: 'Conv_PROXIMANOVA-REGULAR';
+	src: url('../fonts/PROXIMANOVA-REGULAR.eot');
+	src: local('☺'), url('../fonts/PROXIMANOVA-REGULAR.woff') format('woff'), url('../fonts/PROXIMANOVA-REGULAR.ttf') format('truetype'), url('../fonts/PROXIMANOVA-REGULAR.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Conv_PROXIMA NOVA BOLD';
+	src: url('../fonts/PROXIMA NOVA BOLD.eot');
+	src: local('☺'), url('../fonts/PROXIMA NOVA BOLD.woff') format('woff'), url('../fonts/PROXIMA NOVA BOLD.ttf') format('truetype'), url('../fonts/PROXIMA NOVA BOLD.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+a, button {
+	transition: all 0.4s ease-in-out 0s;
+	text-decoration: none !important;
+}
+a:focus {
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: normal;
+}
+#outerImageContainer{}
+#overlay{ opacity:0.55!important;}
+
+
+body{font-family: 'Conv_PROXIMANOVA-REGULAR'; -moz-osx-font-smoothing:grayscale; text-rendering:optimizelegibility; background-color: #b8b8b8; background-attachment:fixed; background-image: url(../img/footer-bg.png); background-repeat: no-repeat; background-position: bottom; background-size: 100%;}
+.main-wrapper{ background: #fff;}
+header{ padding: 15px 30px;}
+.header-rht{ text-align: right; margin-top: 20px;}
+.header-rht2{ text-align: right; margin-top: -40px;}
+.header-rht a {
+  background: #bababc none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 17px;
+  height: 30px;
+  text-align: center;
+  width: 30px;
+  line-height: 30px;
+  margin: 0 0 0 8px;
+}
+.header-rht2 a {
+    color: black;
+    background: none;
+    border-radius: 50%;
+    /* color: #fff; */
+    display: inline-block;
+    font-size: 22px;
+    height: 0px;
+    text-align: right;
+    width: 100%;
+    line-height: 5;
+    margin: 0px 0 0 0px;
+}
+.header-rht h2{ font-size: 40px; color: #333; font-family: Georgia, Times, "Times New Roman", serif; font-style: italic; position: relative;}
+.header-rht h2::before{ content: ""; height: 2px; width: 55px; background: #b25e3e; position: absolute; right: 20px; bottom: -2px;}
+
+.navbar {background: #ff5e00; border: 0; border-radius: 0; min-height: 0; margin-bottom: 0;}
+#navbar{ padding: 0; border: 2px solid #fff; border-bottom: 0;}
+.navbar-nav>li>a{ color: #fff !important; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 13px 24px;}
+.cart-bag a{ padding: 9px 21px 2px !important;}
+.cart-bag a img{ position: relative; top: -5px; margin-left: 10px;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #333 !important;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: #333 !important;
+}
+
+.hide-txt {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 12px;
+    left: 26px;
+    display: none;
+}
+.prdt_btn li button {
+  background-color: #333;
+  border: medium none;
+  border-radius: 0;
+  color: #fff !important;
+  font-family: "Conv_PROXIMA NOVA BOLD";
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0 0;
+  padding: 11px 12px;
+  width: 100%;
+}
+.prdt_btn li button:hover, .prdt_btn li button:focus {
+  background-color: #ff5e00;
+}
+.home-left{ width: 72.5%; float: left;}
+.home-right{ float: right; width: 27.5%;}
+.slider{ float: left; margin: 2px;}
+.cltr span {
+    display: block;
+    line-height: 40px;
+    background: rgba(0,0,0,0.8);
+    height: 40px;
+    display: inline-block;
+    width: 48px;
+    text-align: center;
+    color: #fff;
+    font-size: 31px;
+}
+.lft-ico {
+    top: 50%;
+    margin-top: -20px;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+}
+.rht-ico {
+    top: 50%;
+    margin-top: -20px;
+    right: 0;
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+}
+.slider:hover .lft-ico, .slider:hover .rht-ico{ opacity: 1; visibility: visible;}
+
+.slider-last {
+    width: 100%;
+    display: table;
+    padding: 3px;
+}
+.last-slide{ text-align: center; padding: 40px 0;}
+.last-slide p{ font-size: 24px; color: #3c3c3c; line-height: 24px;}
+.last-slide a{ font-size: 16px; color: #ff5e00; font-style: italic; font-family: Georgia, Times, "Times New Roman", serif;}
+
+footer{ padding: 30px 0 90px;}
+.footer-links{ display: inline-block}
+.footer-links ul li{ display: inline-block; vertical-align: middle; font-size: 18px; color: #333; margin-left: 30px;}
+.footer-links ul li a{ font-weight: 700; color: #333;}
+.newsletter{}
+.newsletter input.cat_textbox_small{ width: 240px; height: 37px; border-radius: 4px 0 0 4px; background: rgba(255,255,255,0.6); float: left; border: 0; font-size: 14px; padding: 0 15px; color: #333;}
+.newsletter input.fa-angle-right{ background: url(../img/get_btn.png); height: 37px; width: 34px; color: #fff; float: left; border: 0; display: inline-block; border-radius: 0 4px 4px 0; font-size:0;}
+.copyrht{ display: inline-block; margin-top: 10px;}
+.copyrht p{ font-size: 14px; color: #333; margin-bottom: 0;}
+
+
+/*fade-slider*/
+.carousel.fade {
+    opacity: 1;
+    z-index: 1;
+}
+.carousel.fade .item {
+    -moz-transition: opacity ease-in-out 5s;
+    -o-transition: opacity ease-in-out 5s;
+    -webkit-transition: opacity ease-in-out 5s;
+    transition: opacity ease-in-out 5s;
+    left: 0 !important;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: block !important;
+    z-index: 1;
+}
+.carousel.fade .item:first-child {
+    top: auto;
+    position: relative;
+}
+.carousel.fade .item.active {
+    opacity: 1;
+    -moz-transition: opacity ease-in-out 5s;
+    -o-transition: opacity ease-in-out 5s;
+    -webkit-transition: opacity ease-in-out 5s;
+    transition: opacity ease-in-out 5s;
+    z-index: 2;
+}
+
+
+/*product page*/
+
+
+.product-main{ margin: 0 2px 0;}
+.pro-categories {
+    border: 1px solid #333333;
+}
+.pro-categories h3{ font-size: 16px; color: #fff; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; display: block; background: #333; text-align: center; padding: 12px 0;}
+.pro-categories h3 i{ display: none;}
+#accordion .panel-heading { padding: 0;}
+#accordion .panel-title > a {
+	display: block;
+	padding: 0 ;
+    outline: none;
+    text-decoration: none;
+    background: none !important;
+    font-size: 16px; color: #373332; 
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0 20px;
+}
+
+.pro-list-acco .panel-group{
+    margin: 25px 0 !important;
+}
+.pro-list-acco .panel-group .panel {
+  border: none;
+    background: none !important;
+}
+.pro-list-acco .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: transparent;
+    background: none !important;
+}
+
+.pro-list-acco .panel {
+  box-shadow: none;
+    margin-bottom: 10px;
+    background: none !important;
+}
+.pro-list-acco .panel-body {
+    background: none !important;
+    padding: 0 !important;
+}
+.pro-list-acco .panel-body ul{
+    padding: 0 !important;
+    margin: 10px 0 !important;
+}
+.pro-list-acco .panel-body ul li{
+    list-style-type: none;
+}
+.pro-list-acco .panel-body ul li a{
+    font-size: 16px;
+    line-height: 18px;
+    color: #333;
+    display: block;
+    padding: 2px 40px;
+    position: relative;
+}
+.pro-list-acco .panel-body ul li a:hover{
+    background: #e0e0e0;
+}
+.pro-list-acco .panel-body ul li.selected{
+    background: #e0e0e0;
+}
+.pro-list-acco .panel-body ul li a::before {
+    content: ".";
+    position: absolute;
+    left: 26px;
+    top: -1px;
+    display: inline-block;
+    line-height: 0px;
+    font-size: 42px;
+}
+.pagination.webapp {
+  border-top: 1px solid #e8e8e8;
+  display: inline-block;
+  padding: 14px 0 0!important;
+  width: 98%;
+  border-radius: 0;
+}
+.pagination.webapp li {
+  border: 1px solid #222;
+  font-size: 16px;
+  height: auto;
+  line-height: normal;
+  margin: 0 6px 17px;
+  padding: 0 8px;
+  text-align: center;
+  width: 27px;
+}
+.pagination.webapp li a {
+  border: medium none;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+.gallery-item {
+  float: left;
+  margin: 14px 0 3px;
+  width: 100%;
+}
+
+.pag-current {
+  background: #ed5a28 none repeat scroll 0 0;
+  color: #fff;
+}
+.pag-next {
+  border: medium none!important;
+  width:auto!important;
+}
+.pag-prev {
+  border: medium none!important;
+  width: auto!important;
+}
+.pagination.webapp li a:hover{ background:none!important;}
+
+.pro-list-acco .panel-default > .panel-heading{ background: none !important;}
+
+.product-list{ margin: 20px 0 !important}
+.product-list h1{ font-size: 36px; font-weight: 700; color: #333; margin-bottom: 20px; letter-spacing: 1px;}
+.product-list ul{ margin: 0 !important; padding: 0 !important;}
+.product-list ul li{ float: left; width: 184px; margin-right: 30px; margin-bottom: 20px; list-style-type: none;}
+.product-list ul li:nth-child(4n+4){ margin-right: 0}
+.product-list ul li a{ display: block; text-align: right;}
+.product-list ul li span{ height: 184px; width: 100%; display: block; overflow: hidden; margin: auto; }
+.product-list ul li span img{ display: block;}
+.product-list ul li a h3{ font-size: 16px; color: #333; display: block; text-align: center; margin-top: 10px;}
+
+.send-link {
+  background: #ed5a28 none repeat scroll 0 0;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 30px 4px;
+  text-align: center;
+}
+.send-link h3 {
+  color: #fff;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+/*partner page*/
+
+.partner-main{ padding: 30px 0;}
+.partner-heading{ text-align: center; margin-bottom: 30px;}
+.partner-heading h1{ font-size: 36px; color: #333; font-weight: 700; letter-spacing: 1px; font-family: 'Conv_PROXIMA NOVA BOLD';}
+.partner-heading h6{ font-size: 18px; color: #333; font-style: italic; font-family: Georgia, Times, "Times New Roman", serif;}
+.partner-content{ padding: 0 95px; margin-left: 40px; margin-right: -110px;}
+.partner-logo{ float: left; margin: 15px; width: 30%;}
+.partner-logo span{ border: 1px solid #d6d6d6; width: 160px; height: 145px; display: block; padding: 40px 0;}
+.partner-logo ul{ margin: 10px 0 !important; padding: 0 !important;}
+.partner-logo ul li{ list-style-type: none;}
+.partner-logo ul li a{ color: #333; font-size: 16px; line-height: 18px;}
+.partner-logo ul li:last-child a{ text-decoration: underline !important;}
+
+
+/*blog page*/
+
+.blog-list{ padding: 0 40px;}
+.blog-list .col-sm-4{ padding-left: 54px;}
+.blog{ margin-bottom: 30px; padding-right: 40px;}
+.blog a{ font-size: 30px; color: #333; font-family: 'Conv_PROXIMA NOVA BOLD'; line-height: 30px;}
+.blog ul{ margin: 7px 0 10px; padding: 0;}
+.blog ul li{ display: inline-block; list-style-type: none;}
+.blog ul li a{ font-size: 14px; color: #333; font-style: italic; font-family: Georgia, Times, "Times New Roman", serif;}
+.blog ul li:first-child::after{
+    content: "-";
+    padding: 0 4px;
+}
+.blog ul li:last-child::before{
+    content: "|";
+    padding: 0 6px;
+}
+.blog ul li a span{ color: #ed5a28;}
+.blog p{ font-size: 14px; color: #333; line-height: 18px;}
+
+.blog-cate{ border: 1px solid #333; margin-bottom: 20px;}
+.blog-cate h4{font-size: 16px; color: #fff; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; display: block; background: #333; text-align: center; padding: 12px 0;}
+.blog-cate ul{ margin: 0; padding: 22px 20px;}
+.blog-cate ul li{ list-style-type: none; margin-bottom: 5px;}
+.blog-cate ul li > a{ font-size: 16px; color: #333; font-family: 'Conv_PROXIMA NOVA BOLD';}
+.blog-cate.blog-arch ul li a{ font-size: 16px; color: #333; font-family: 'Conv_PROXIMANOVA-REGULAR';}
+.blog-cate ul li a span{color: #ed5a28;}
+
+
+
+/*contact page*/
+
+
+.contact-form{ width: 720px; margin: auto;}
+.contact-form input, .contact-form textarea{ border: 2px solid #000001; height: 46px; width: 100%; padding: 0 15px; font-size: 18px; color: #333;}
+.contact-form textarea{ height: 207px; padding: 15px; margin-top: 12px; resize: none;}
+.contact-form .submit-btn{ width: 100%; background: #ed5a28; color: #fff; font-size: 18px; font-family: 'Conv_PROXIMA NOVA BOLD'; border-color: #ed5a28; letter-spacing: 1px; margin-top: 5px}
+.no-padding{ padding: 0 7px;}
+
+.contact-detail{ padding: 40px 0;}
+.cont{ width: 50%; padding: 10px 55px;}
+.cont h4{ font-size: 18px; color: #333; letter-spacing: 1px; font-family: 'Conv_PROXIMA NOVA BOLD'; margin-bottom: 7px;}
+.cont p{ font-size: 16px; color: #333; letter-spacing: 1px;}
+.cont ul{ margin: 0; padding: 0;}
+.cont ul li{font-size: 16px; color: #333; letter-spacing: 1px; list-style-type: none;}
+.cont ul li a{ color: #333;}
+.cont:last-child{ border-left: 1px solid #b8b8b8;}
+.blog > a:last-child {
+    font-size: 13px;
+    line-height: 16px;
+}
+.modal-backdrop.in {
+  opacity: 0.9!important;
+}
+.modal-dialog {
+  margin: 30px auto;
+  text-align: center;
+  width: 100%!important;
+}
+.modal-content{ background:none!important; border:none; box-shadow:none; }
+.modal-header{ border:none!important;}
+.modal-open .modal{ padding:0!important;}
+.modal-footer{display:none;}
+.close {
+  background: #fff none repeat scroll 0 0 !important;
+  border-radius: 50%;
+  height: 28px;
+  opacity: 1;
+  width: 28px;
+  position: absolute;
+    right: 28px;
+    top: 0;
+}
+.modal-content > form {
+  margin: auto;
+  position: relative;
+  width: 43%;
+  margin-top:15px!important;
+}
+.system-message {
+  padding: 0 23px;
+}
+.system-error-message {
+  padding: 0 23px;
+}
+.modal-body{ padding:0!important;}
+.modal-content .cat_textbox {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 15px;
+  width: 100%;
+}
+.modal-content .cat_button {
+  background: #ff5e00 none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 30px;
+  position: absolute;
+  right: 1px;
+  text-transform: uppercase;
+  top: 1px;
+}
+.url {
+  color: #cecece;
+  margin: 4px 0 0;
+}
+.modal-content > h6 {
+  color: #fff;
+  font-size: 20px;
+}
+.modal-title {
+  color: #fff;
+  font-size: 50px;
+  line-height: 42px;
+}
+
+img{ max-width:100%;}
+.product1 {
+  border: 1px solid #222;
+}
+.product-list ul li a {
+  color: #333;
+  display: block;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}  
+/*single_product*/
+.product-list .prdt_btn ul li {
+  float: left;
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-right: 0!important;
+  width: 122px;   
+}
+.product1 .item img{ width:auto; margin:auto;}
+.nav.nav-pills.nav-justified a{ padding:0!important;}
+.nav.nav-pills.nav-justified a {
+    padding: 0 !important;
+    border-radius: 0;
+    margin: 13px 10px 0 0;
+}
+.shop-cart {
+    padding: 0 30px;
+    max-width: 510px;
+    margin: auto;
+    text-align: center;
+}
+.shop-cart h1{ margin-bottom:15px;}
+.productitemcell img {
+    width: 100px;
+    border: 1px solid #333;
+    margin: 0 0 17px 0;
+    display: inline-block;
+}
+.productitemcell {
+   height: 100px;
+margin: 0 0px 19px 0;
+vertical-align: middle;
+line-height: 100px;
+font-size: 20px;
+
+    font-weight: bold;
+}
+body .productitemcell a{ padding:7px 15px;color:#ff5e00!important; font-weight:normal;}
+/* body .productitemcell a:hover, .productitemcell a:focus{ background:#ff5e00; color:#fff!important;}	 */
+#catCartDetails {
+    padding: 0 30px;
+	text-align:center;
+}
+#catCartDetails a{ color:#ff5e00; font-size:16px; text-transform:uppercase;}
+#catCartDetails a{
+    color:#000;
+}
+.cart{ width:100%}
+body .share_link:hover, body .share_link:focus{ background:#000; color:#fff!important;}
+body .share_link {
+    background: #ff5e00;
+    color: #fff!important;
+    padding: 12px 19px!important;
+    display: inline-block;
+    font-size: 18px;
+    margin: 30px 0 0 0;
+	font-weight:bold;
+	border:none; border-radius:0;
+}
+.nav.nav-pills.nav-justified li {
+    width: 21%;
+    margin: 0;
+}
+.nav.nav-pills.nav-justified li img{ max-width:100%;}
+.full_section { padding:0; width: 100%;}
+.product1 { border: 1px solid #000; padding: 20px; text-align: center; width: 100%;}
+.product1 img{ width:100%;}
+.right_txt{ float:left;}
+.right_txt h2{ font-size:36px; color:#333; font-family: 'Conv_PROXIMA NOVA BOLD'; font-weight:700;}
+.right_txt h6{ font-size:16px; color:#333; font-family: 'Conv_PROXIMA NOVA BOLD'; font-weight:700; line-height:30px; margin-bottom:30px;}
+.right_txt p{ font-size:14px; color:#333; line-height:20px; font-family: 'Conv_PROXIMANOVA-REGULAR'; margin-right: 15px;}
+.prdt_btn{ width:100%; margin:0;}
+.prdt_btn ul { float: left; list-style-type: none; margin:0; padding:0;}
+.prdt_btn li { float: left; margin-bottom: 36px; margin-left: 10px;}
+.prdt_btn li a {
+  background-color: #333;
+  color: #fff!important;
+  font-family: "Conv_PROXIMA NOVA BOLD";
+  font-size: 16px;
+  font-weight: 700;
+  padding: 11px 12px;
+  width: auto;
+}
+.prdt_btn li a:hover{ background-color:#ff5e00;}
+.prdt_btn {
+  float: left;
+  margin-left: -9px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+input.productSubmitInput {
+    background-color: #333;
+    color: #fff !important;
+    font-family: "Conv_PROXIMA NOVA BOLD";
+    font-size: 16px;
+    font-weight: 700;
+    padding: 11px 12px;
+    width: 100%;
+	margin-top: 10px;
+	border:none;
+}
+input.productSubmitInput:hover {
+    background-color: #ff5e00;
+}
+
+@media ( max-width: 767px){
+.nav.nav-pills.nav-justified li {
+  margin: 0 !important;
+  width: 100px;
+  float:none;display:inline-block;
+}
+.nav.nav-pills.nav-justified a {
+  border-radius: 0;
+  margin: 10px 3px;
+  padding: 0 !important;
+}
+.right_txt{ padding:0 15px;}
+.nav.nav-pills.nav-justified {
+  text-align: center;
+  width: 100%;
+}
+.modal-content > form{ width:90%;}
+}
+@media ( max-width: 550px){
+.shop-cart{ padding:0;}
+.shop-cart h1{ font-size:26px;}
+#catCartDetails a {
+    color: #ff5e00;
+    font-size: 13px;
+    padding: 0 11px;
+    text-transform: uppercase;
+}
+.productitemcell {
+    font-size: 14px;
+    font-weight: bold;
+    height: 64px;
+    line-height: 79px;
+    margin: 0 6px 19px 0;
+    vertical-align: middle;
+}
+}
+
+@media ( max-width: 428px){
+.modal-content .cat_button {
+  position: relative;
+  top: 12px;
+}
+.product-list ul li span {  
+  height: auto!important;
+}
+.prdt_btn li button{ font-size:13px!important;}
+
+input.productSubmitInput{ font-size:13px!important; width:100%;}
+.product-list .prdt_btn ul li{ width:100px;}
+.prdt_btn li a{ font-size:13px!important;}
+}

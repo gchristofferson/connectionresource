@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/Product Template.dwt" codeOutsideHTMLIsLocked="false" -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- InstanceBeginEditable name="doctitle" --><title></title><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+      <link rel="stylesheet" href="/css/font-awesome.min.css">
+      <link rel="stylesheet" href="/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/css/style.css">
+      <link rel="stylesheet" href="/css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+      <script src="/js/cat.js"></script>
+ 
+      
+      
+  </head>
+  <body>
+      <div class="container">
+          <div class="main-wrapper">
+              {module_contentholder,name="Header"}
+              {module_contentholder,name="Nav"}
+<div class="product-main">
+                  <div class="row">              
+<div class="col-md-3 col-sm-4">
+    
+                          <div class="pro-categories">
+                              <h3>Categories <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+                              <div class="pro-list-acco">
+                                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								  
+									{module_contentholder,name="Product Page Filter Menu"}
+
+                                    </div>
+                                </div>
+                          </div>
+                          <div class="send-link">
+                              <h3>Select a product &amp; <b>Send a Link</b><br /><br />
+Or add a bunch of products to your resource <b>bag &amp; share all</b> your favorites</h3>
+                          </div>
+                      </div>
+
+<div class="col-md-9 col-sm-8">
+                          <div class="product-list">
+			<!-- InstanceBeginEditable name="ContentArea" --><h1>Signage/{module_pagename}</h1>
+<ul class="clearfix">
+    {module_webapps id="21575" filter="classified" itemId="90696" resultsPerPage="12"}
+</ul><!-- InstanceEndEditable -->
+    </div>
+                      </div>
+    </div>
+             
+    </div>
+              
+</div>
+              {module_contentholder,name="Footer"}
+
+          </div>
+      
+  <script>
+    var i=1;
+	$( "#accordion .panel-default" ).each(function( index ) {
+        $(this).find("li").each(function( index ) {
+			if(this.className=='selected')
+            {
+				if(i==1)
+                {
+                    //alert(4);
+                }
+                else
+                {
+					$( ".panel-default" ).first().find('.panel-collapse').removeClass( 'in' );
+
+                 	$(this).parents('.panel-collapse').addClass('in');
+                }
+            }
+            
+        });
+        i++;  
+    });
+	  $( ".pag-range" ).remove();
+  </script>
+  </body>
+<!-- InstanceEnd --></html>

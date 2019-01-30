@@ -1,0 +1,172 @@
+{% comment -%} The following scripts and css are used for the Add to Cart funcationality on this detail page, do not delete. {% endcomment -%}
+
+<link rel="stylesheet" href="/CatalystStyles/Box.css?vs=b2097.r497664-phase1" type="text/css" media="screen" />
+<script type="text/javascript" src="/CatalystScripts/Java_OnlineShopping.js?vs=b2097.r497664-phase1"></script>
+<script type="text/javascript" src="/CatalystScripts/Java_Cookies.js?vs=b2097.r497664-phase1"></script>
+<script type="text/javascript" src="/CatalystScripts/Java_Box.js?vs=b2097.r497664-phase1"></script>
+<script type="text/javascript" src="/ajaxpro/prototype-core.ashx"></script>
+<script type="text/javascript" src="/ajaxpro/CMS.CatalogueRetrieve,Catalyst.Web.CMS.ashx"></script>
+
+<script>
+$(document).ready(function() {
+    $('.carousel').each(function(){
+        $(this).carousel({
+            pause: true,
+            interval: false
+        });
+    });
+});
+</script>
+
+
+
+<div class="full_section">
+               <div class="row">
+                 <div class="col-sm-11 col-md-6 col-xs-12">
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+ <div class="product1">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+{module_webapps collection="myProductsWebapp" render="collection" id="Products"  filter="item" itemId="{tag_itemid}" template=""}
+                            {% for item in myProductsWebapp.items %}
+        <div class="item active">
+            {% if item.['Product Image Large'] == '' %} 
+            <img src="{tag_product image_value}" alt=""> 
+            {% else %}
+            <img src="{tag_product image large_value}" alt="">
+            {% endif %}
+           
+        </div><!-- End Item -->
+ 
+         <div class="item">
+              {% if item.['image 1 large'] == '' %}  
+              <img src="{tag_image 1_value}" alt=""> 
+              {% else %}
+              <img src="{tag_image 1 large_value}" alt=""> 
+              {% endif %}
+
+        </div><!-- End Item -->
+        
+        <div class="item">
+                       {% if item.['image 2 large'] == '' %} 
+                       <img src="{tag_image 2_value}" alt=""> 
+                       {% else %}
+                       <img src="{tag_image 2 large_value}" alt=""> 
+                       {% endif %}
+           
+        </div><!-- End Item -->
+
+        <div class="item">
+                       {% if item.['image 3 large'] == '' %}
+                       <img src="{tag_image 3_value}" alt=""> 
+                       {% else %}
+                       <img src="{tag_image 3 large_value}" alt=""> 
+                       {% endif %}
+                       {% endfor -%}
+
+          </div></div><!-- End Item -->
+                
+      </div><!-- End Carousel Inner -->
+
+
+    	<ul class="nav nav-pills nav-justified">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">{tag_product image_nolink}</a></li>
+            <li data-target="#myCarousel" data-slide-to="1"><a href="#">{tag_image 1_nolink}</a></li>
+            <li data-target="#myCarousel" data-slide-to="2"><a href="#">{tag_image 2_nolink}</a></li>
+            <li data-target="#myCarousel" data-slide-to="3"><a href="#">{tag_image 3_nolink}</a></li>
+        </ul>
+
+
+    </div><!-- End Carousel -->
+
+
+                 </div>
+                 <div class="col-sm-11 col-md-6 col-xs-12">
+                   <div class="right_txt">
+                       <h2>{tag_name}</h2>
+                       <!--<h6>{tag_categorie name}</h6>-->
+                       {tag_description}          
+                       <div class="prdt_btn">
+                        <ul>
+
+                            {module_webapps collection="myProductsWebapp" render="collection" id="Products"  filter="item" itemId="{tag_itemid}" template=""}
+                            {% for item in myProductsWebapp.items %}
+                            {% if item.['Source Link'] != '' %}
+                            <li><a href="{tag_source link}" target="_blank">Manufacturer</a></li>
+                            {% endif -%}
+                            <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Send Link</button></li>
+                            <li>     <input class="productSubmitInput float-right" name="AddToCart_Submit" type="submit" value="Add to Bag" onclick="AddToCart(238435,{tag_product id},'',3,'','',false);return false;"> </li>
+                            {% if item.['3D Files'] != '' %} 
+                            <li><a href="{tag_3d files_value}" target="_blank">3D files</a></li>
+                            {% endif -%}
+                            {% if item.['Warranty'] != '' %}
+                            <li><a href="{tag_warranty_value}" target="_blank">Warranty</a></li>
+                            {% endif -%}
+                            {% if item.['Price List'] != '' %} 
+                            <li><a href="{tag_price list_value}" target="_blank">Price list</a></li>
+                            {% endif -%} 
+                            {% endfor -%}
+                        </ul>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("li button").click(function(){
+            var pageURL = $(location).attr("href");
+                $("#CAT_Custom_492259").val(pageURL);
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("button").click(function(){
+            var pageURL = $(location).attr("href");
+            $("p.url").html(pageURL);
+        });
+    });
+</script>
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Share</h4>
+        </div>
+          <h6>Individual Products</h6>
+        <p class="url"></p>
+<script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js?vs=b2282.r507300-phase1"></script>
+<form name="catwebformform55997" method="post" onsubmit="return checkWholeForm55997(this)" enctype="multipart/form-data" action="http://george-schoenwald.bizdev.studio/FormProcessv2.aspx?WebFormID=218573&OID={module_oid}&OTYPE={module_otype}&EID={module_eid}&CID={module_cid}"> 
+<div class="modal-body"></div>
+    <table>
+    <td> </td>
+    </table>
+<input type="text" name="EmailAddress" placeholder="Email Address" id="EmailAddress" class="cat_textbox" maxlength="255" />
+<input type="hidden" maxlength="4000" name="CAT_Custom_492259" id="CAT_Custom_492259" class="cat_textbox" />
+<input class="cat_button" type="submit" value="Submit" id="catwebformbutton" /><script type="text/javascript">
+//<![CDATA[
+var submitcount55997 = 0;function checkWholeForm55997(theForm){var why = "";
+if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value); 
+if(why != ""){alert(why);return false;}if(submitcount55997 == 0){submitcount55997++;theForm.submit();return false;}else{alert("Form submission is in progress.");return false;}}
+//]]>
+</script></form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
